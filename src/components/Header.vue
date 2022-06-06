@@ -1,8 +1,9 @@
 <template>
-  <div class="ms_container row row-cols-1 row-cols-xl-2 justify-content-center align-items-center overflow-hidden text-center">
+<div class="ms_background">
+  <div id="home" class="ms_container row row-cols-1 row-cols-xl-2 justify-content-center align-items-center overflow-hidden text-center">
     <div class="col ms_frase">
-      Ogni giorno, quello che scegli, quello che pensi e quello che fai 
-      <div class="ms_macchinascrivere">
+      Ogni giorno, quello che scegli, quello che pensi e quello che fai ...
+      <div class="ms_macchinascrivere reveal-text">
         È ciò che diventi.
       </div>
     </div>
@@ -109,8 +110,8 @@
           </div>
       </div>
     </div>
-
   </div>
+</div>
 </template>
 
 <script>
@@ -122,6 +123,14 @@ export default {
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+.ms_background{
+  background-image: url(../assets/seatop.jpg);
+  background-size: cover;
+  width: 100%;
+  /* transform: scaleY(-1); */
+  background-position: 0 20%;
+  background-repeat: no-repeat;
+}
 .ms_container{
   max-width: 1150px;
   margin: 0 auto;
@@ -133,16 +142,84 @@ export default {
   font-size: 2rem;
 }
 
-.ms_macchinascrivere{
+.reveal-text,
+.reveal-text::after {
+	animation-delay: var(--animation-delay, 2s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+	--animation-delay: var(--delay, 5s);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	font-size: 3rem;
+	animation-name: clip-text;
+	color: #FF2C75;
+	white-space: nowrap;
+	cursor: default;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #f2f98b;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
+
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+/* .ms_macchinascrivere{
   color: #FF2C75;
   width: 410px;
   font-weight: bolder;
-  font-size: 2.5rem;
+  font-size: 2rem;
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap; 
   margin: 20px auto; 
-  letter-spacing: .15em;
+  letter-spacing: .25em;
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite,
@@ -175,7 +252,7 @@ export default {
   100%{
     opacity: 1;
   }
-}
+} */
 
 .ms_rettangolo{
   height: 200px;
@@ -204,42 +281,42 @@ export default {
 .ms_rettangoloSw{
   animation: inferiore-sinistra 20s ;  
   animation-fill-mode: forwards;
-  z-index: -8;
+  z-index: 1;
 }
 .ms_rettangoloW{
   animation: superiore-sinistra 20s; 
   animation-fill-mode: forwards; 
-  z-index: -7;
+  z-index: 2;
 }
 .ms_rettangoloNw{
   animation: superiore-sinistra2 20s;  
   animation-fill-mode: forwards;
-  z-index: -8;
+  z-index: 1;
 }
 .ms_rettangoloN{
   animation: superiore 20s;
   animation-fill-mode: forwards;
-  z-index: -5;
+  z-index: 2;
 }
 .ms_rettangoloNe{
   animation: superiore-destra 20s;
   animation-fill-mode: forwards;  
-  z-index: -8;
+  z-index: 1;
 }
 .ms_rettangoloE{
   animation: superiore-destra2 20s;  
   animation-fill-mode: forwards;
-  z-index: -3;
+  z-index: 3;
 }
 .ms_rettangoloSe{
   animation: inferiore-destra 20s; 
   animation-fill-mode: forwards;
-  z-index: -8;
+  z-index: 1;
 }
 .ms_rettangoloS{
   animation: inferiore 20s;
   animation-fill-mode: forwards;
-  z-index: -1; 
+  z-index: 4; 
 }
 
 
@@ -442,12 +519,13 @@ export default {
 }
 
 .ms_cerchiodx {
-  border-top: 20px solid teal;
-  border-right: 20px solid teal;
+  border-top: 20px solid #BF953F;
+  border-right: 20px solid #BF953F;
   right: 0;
   animation: cerchio-destra 20s linear;
   animation-fill-mode: forwards;
 }
+
 
 .ms_cerchiosx {
   border-bottom: 20px solid teal;
@@ -495,7 +573,7 @@ export default {
 #pointer {
 	width: 50px; 
   height: 25px;
-	
+	z-index: 6;
 	/* Centering it */
 	left: 50%; top: 50%;
 	transform: translate(-50%, -50%);
@@ -518,15 +596,15 @@ on #pointer:before */
 	position: absolute;
 	left: 0; right: 0;
 	top: 0; bottom: 0;
-	
-	background: linear-gradient(
+	background: red;
+	/* background: linear-gradient(
 		-63deg,
 		rgba(79,188,242,1) 1%,
 		rgba(26,110,206,1) 50%,
 		rgba(216,216,216,1) 51%,
 		rgba(244,94,80,1) 53%,
 		rgba(255,45,45,1) 100%
-	);
+	); */
 	
 	transform: skewX(60deg);
 }

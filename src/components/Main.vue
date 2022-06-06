@@ -1,5 +1,6 @@
 <template>
-  <div class="ms_container">
+<div class="ms_background position-relative">
+  <div id="su di me" class="ms_container d-flex align-items-center">
     <div class="d-none d-lg-block">
       <div class="ms_sidebar row row-cols-1 flex-column justify-content-between align-items-center">
         <div class="ms_logo col m-auto">
@@ -12,8 +13,12 @@
         <div class="ms_linea col m-auto"></div>
 
         <div class="ms_icona d-flex flex-column text-center col m-auto">
-          <i class="fas fa-envelope"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <a href="mailto:davide.masadm@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/davide-masa/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
           
         </div>
       </div>
@@ -21,33 +26,36 @@
       <div class="ms_sidebar2 row row-cols-1 flex-column justify-content-between align-items-center">
         <div class="ms_menu col m-auto">
           <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center">
-          <div class="Menu">
-            <ul class="Menu-list">
-              <li class="Menu-list-item">
-                Home
-                <span class="Mask"><span>Home</span></span>
-                <span class="Mask"><span>Home</span></span>
-              </li>
-              <li class="Menu-list-item">
-                Su di me
-                <span class="Mask"><span>Su di me</span></span>
-                <span class="Mask"><span>Su di me</span></span>
-              </li>
-              <li class="Menu-list-item">
-                Progetti
-                <span class="Mask"><span>Progetti</span></span>
-                <span class="Mask"><span>Progetti</span></span>
-              </li>
-              <li class="Menu-list-item">
-                Contatti
-                <span class="Mask"><span>Contatti</span></span>
-                <span class="Mask"><span>Contatti</span></span>
-              </li>
-            </ul>
+            <div class="Menu">
+              <ul class="Menu-list">
+                <a href="#home">
+                  <li class="Menu-list-item">
+                    Home
+                    <span class="Mask"><span>Home</span></span>
+                    <span class="Mask"><span>Home</span></span>
+                  </li>
+                </a>
+                <a href="#su di me">
+                  <li class="Menu-list-item">
+                    Su di me
+                    <span class="Mask"><span>Su di me</span></span>
+                    <span class="Mask"><span>Su di me</span></span>
+                  </li>
+                </a>
+                <li class="Menu-list-item">
+                  Progetti
+                  <span class="Mask"><span>Progetti</span></span>
+                  <span class="Mask"><span>Progetti</span></span>
+                </li>
+                <li class="Menu-list-item">
+                  Contatti
+                  <span class="Mask"><span>Contatti</span></span>
+                  <span class="Mask"><span>Contatti</span></span>
+                </li>
+              </ul>
+            </div>
           </div>
-
         </div>
-      </div>
         <div class="ms_linea col"></div>
       </div>
     </div>
@@ -89,15 +97,25 @@
           affrontare questa nuova sfida in un
           mondo, per me, completamente nuovo
           ma molto stimolante.
-
         </div>
       </div>
       <div class="ms_/p">
         &lt;/p&gt;
       </div>
-
+      <div class="ms_body">
+        &lt;/body&gt;
+      </div>
+      <div class="ms_html">
+        &lt;/html&gt;
+      </div>
     </div>
 
+
+    <div class="custom-shape-divider-bottom-1654526291">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+    </div>
 
 
 
@@ -114,6 +132,7 @@
       </div>
     </div> -->
   </div>
+</div>
 </template>
 
 <script>
@@ -126,10 +145,15 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+.ms_background{
+  background-color: #97aac1;
+  z-index: 0;
+}
 .ms_container{
   max-width: 1150px;
   margin: 0 auto;
   height: 100vh;
+  padding: 0 150px;
 }
 
 .ms_sidebar{
@@ -187,11 +211,15 @@ img{
   padding: 30px 0;
 }
 
+a{
+  text-decoration: none;
+}
 .ms_menu{
   width: 150px;
   height: 200px;
   border: 1px solid black;
   background-color: white;
+  transform: rotateX(-20deg) rotateY(20deg);
 }
 
 .ms_html{
@@ -204,6 +232,32 @@ img{
 .ms_scritta{
   margin-left: 20px;
 }
+
+
+
+.custom-shape-divider-bottom-1654526291 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-bottom-1654526291 svg {
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 129px;
+}
+
+.custom-shape-divider-bottom-1654526291 .shape-fill {
+    fill: #F00000;
+}
+
+
+
+
 
 
 
