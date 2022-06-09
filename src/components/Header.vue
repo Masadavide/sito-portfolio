@@ -481,6 +481,25 @@ export default {
 
 
 //cerchio
+.ms_cerchio{
+  background-image: url(../assets/infinito.jpg);
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 50%;
+  animation: opacity 20s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  10%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .ms_boxcerchio {
   position: relative!important;
   min-width: 420px;

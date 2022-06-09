@@ -1,144 +1,168 @@
 <template>
-<div class="ms_background position-relative">
-  <div id="su di me" class="ms_container d-flex align-items-center">
-    <div class="d-none d-lg-block">
-      <div class="ms_sidebar row row-cols-1 flex-column justify-content-between align-items-center">
-        <div class="ms_logo col m-auto">
-          <img src="../assets/logoMasa.png" alt="">
-          <div class="ms_scrittalogo">
-            Masa
-          </div>
-        </div>
-
-        <div class="ms_linea col m-auto"></div>
-
-        <div class="ms_icona d-flex flex-column text-center col m-auto">
-          <a href="mailto:davide.masadm@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/davide-masa/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          
-        </div>
-      </div>
-
-      <div class="ms_sidebar2 row row-cols-1 flex-column justify-content-between align-items-center">
-        <div class="ms_menu col m-auto">
-          <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center">
-            <div class="Menu">
-              <ul class="Menu-list">
-                <a href="#home">
-                  <li class="Menu-list-item">
-                    Home
-                    <span class="Mask"><span>Home</span></span>
-                    <span class="Mask"><span>Home</span></span>
-                  </li>
-                </a>
-                <a href="#su di me">
-                  <li class="Menu-list-item">
-                    Su di me
-                    <span class="Mask"><span>Su di me</span></span>
-                    <span class="Mask"><span>Su di me</span></span>
-                  </li>
-                </a>
-                <li class="Menu-list-item">
-                  Progetti
-                  <span class="Mask"><span>Progetti</span></span>
-                  <span class="Mask"><span>Progetti</span></span>
-                </li>
-                <li class="Menu-list-item">
-                  Contatti
-                  <span class="Mask"><span>Contatti</span></span>
-                  <span class="Mask"><span>Contatti</span></span>
-                </li>
-              </ul>
+<div>
+  <section class="ms_background position-relative">
+    
+    <div id="su di me" class="ms_container d-flex align-items-center">
+      <div class="d-none d-lg-block">
+        <div class="ms_sidebar row row-cols-1 flex-column justify-content-between align-items-center">
+          <div class="ms_logo col m-auto">
+            <img src="../assets/logoMasa.png" alt="">
+            <div class="ms_scrittalogo">
+              Masa
             </div>
           </div>
+
+          <div class="ms_linea col m-auto"></div>
+
+          <div class="ms_icona d-flex flex-column text-center col m-auto">
+            <a href="mailto:davide.masadm@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/davide-masa/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+          </div>
         </div>
-        <div class="ms_linea col"></div>
+
+        <div class="ms_sidebar2 row row-cols-1 flex-column justify-content-between align-items-center">
+          <div class="ms_menu col m-auto">
+            <div class="w-100 h-100 d-flex flex-column justify-content-around align-items-center">
+              <div class="Menu">
+                <ul class="Menu-list">
+                  <a href="#home">
+                    <li class="Menu-list-item">
+                      Home
+                      <span class="Mask"><span>Home</span></span>
+                      <span class="Mask"><span>Home</span></span>
+                    </li>
+                  </a>
+                  <a href="#su di me">
+                    <li class="Menu-list-item">
+                      Su di me
+                      <span class="Mask"><span>Su di me</span></span>
+                      <span class="Mask"><span>Su di me</span></span>
+                    </li>
+                  </a>
+                  <li class="Menu-list-item">
+                    Progetti
+                    <span class="Mask"><span>Progetti</span></span>
+                    <span class="Mask"><span>Progetti</span></span>
+                  </li>
+                  <li class="Menu-list-item">
+                    Contatti
+                    <span class="Mask"><span>Contatti</span></span>
+                    <span class="Mask"><span>Contatti</span></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="ms_linea col"></div>
+        </div>
       </div>
+
+
+      <!-- <div class="custom-shape-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div> -->
+
+
+
+
+      <div class="ms_biografia">
+        <div class="ms_html">
+          &lt;html&gt;
+        </div>
+        <div class="ms_body">
+          &lt;body&gt;
+        </div>
+        <div class="ms_h">
+          &lt;h2&gt;
+        </div>
+        <div>
+          <div class="ms_scritta">
+            Masa Davide,
+          </div>
+          <div class="ms_scritta">
+            web developer
+          </div>
+        </div>
+        <div class="ms_h">
+          &lt;/h2&gt;
+        </div>
+        <div class="ms_p">
+          &lt;p&gt;
+        </div>
+        <div>
+          <div class="ms_scritta">
+            Sono caparbio e da sempre
+            appassionato di informatica.
+            Dopo aver svolto molteplici lavori,
+            acquisendo svariate esperienze in
+            diversi ambiti, ho deciso di
+            ascoltare la mia passione per
+            l'informatica e, dopo aver studiato ed
+            essermi preparato, sono pronto per
+            affrontare questa nuova sfida in un
+            mondo, per me, completamente nuovo
+            ma molto stimolante.
+          </div>
+        </div>
+        <div class="ms_p">
+          &lt;/p&gt;
+        </div>
+        <div class="ms_body">
+          &lt;/body&gt;
+        </div>
+        <div class="ms_html">
+          &lt;/html&gt;
+        </div>
+      </div>
+
+
+    <!--  <div class="custom-shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill">
+            <image href="../assets/grey.png"/>
+          </path>
+        </svg>
+      </div> -->
+
+
+
+
+
+      <!-- <div class="ms_puntatore">
+        <div class="d-flex">
+          <div class="ms_triangolosuperioresx"></div>
+          <div class="ms_triangolosuperioredx"></div>
+        </div>
+        <div class="d-flex">
+          <div class="ms_triangoloinferioresx"></div>
+          <div class="ms_triangoloinferioredx"></div>
+        </div>
+      </div> -->
     </div>
-
-    <div class="ms_biografia">
-      <div class="ms_html">
-        &lt;html&gt;
-      </div>
-      <div class="ms_body">
-        &lt;body&gt;
-      </div>
-      <div class="ms_h">
-        &lt;h&gt;
-      </div>
-      <div>
-        <div class="ms_scritta">
-          Masa Davide,
-        </div>
-        <div class="ms_scritta">
-          web developer
-        </div>
-      </div>
-      <div class="ms_h">
-        &lt;/h&gt;
-      </div>
-      <div class="ms_p">
-        &lt;p&gt;
-      </div>
-      <div>
-        <div class="ms_scritta">
-          Sono caparbio e da sempre
-          appassionato di informatica.
-          Dopo aver svolto molteplici lavori,
-          acquisendo svariate esperienze in
-          diversi ambiti, ho deciso di
-          ascoltare la mia passione per
-          l'informatica e, dopo aver studiato ed
-          essermi preparato, sono pronto per
-          affrontare questa nuova sfida in un
-          mondo, per me, completamente nuovo
-          ma molto stimolante.
-        </div>
-      </div>
-      <div class="ms_/p">
-        &lt;/p&gt;
-      </div>
-      <div class="ms_body">
-        &lt;/body&gt;
-      </div>
-      <div class="ms_html">
-        &lt;/html&gt;
-      </div>
-    </div>
+  </section>
 
 
-    <div class="custom-shape-divider-bottom-1654526291">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-      </svg>
-    </div>
+  <section :speed-factor="1" class="ms_background2 position-relative">
+    <!-- <img src="../assets/babele.jpg" alt=""> -->
+    <!-- <div id="su di me" class="ms_container2 d-flex align-items-center">
 
 
-
-
-
-    <!-- <div class="ms_puntatore">
-      <div class="d-flex">
-        <div class="ms_triangolosuperioresx"></div>
-        <div class="ms_triangolosuperioredx"></div>
-      </div>
-      <div class="d-flex">
-        <div class="ms_triangoloinferioresx"></div>
-        <div class="ms_triangoloinferioredx"></div>
-      </div>
     </div> -->
-  </div>
+  </section>
 </div>
 </template>
 
 <script>
 export default {
   name: 'Main',
-  }
+}
 </script>
 
 
@@ -146,15 +170,33 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 .ms_background{
+  background-image: url(../assets/strada.jpg);
+  background-size: cover;
   background-color: #97aac1;
   z-index: 0;
+  /* box-shadow: inset 0px 850px 500px -500px white; */
 }
+/* .ms_background::before{
+  content:'';
+  position: absolute;
+  /* opacity: 0; */
+} */
+
 .ms_container{
   max-width: 1150px;
+  height: 100vh;
   margin: 0 auto;
   height: 100vh;
-  padding: 0 150px;
+  padding: 0 120px;
 }
+
+@media screen and (max-width: 990px){
+  .ms_container{
+    padding: 0 20px;
+  }
+}
+
+
 
 .ms_sidebar{
   width: 150px;
@@ -199,6 +241,7 @@ img{
   left: 60px;
   i{
     font-size: 30px!important;
+    color: white;
   }
 }
 
@@ -214,6 +257,7 @@ img{
 a{
   text-decoration: none;
 }
+
 .ms_menu{
   width: 150px;
   height: 200px;
@@ -222,38 +266,32 @@ a{
   transform: rotateX(-20deg) rotateY(20deg);
 }
 
-.ms_html{
-  margin-left: -40px;
+.ms_biografia{
+  color: white;
+  border: 1px solid black;
+  background-color: #8ba7c9;
+  font-size: 20px;
 }
 
+/* .ms_html{
+  
+} */
+
 .ms_body{
-  margin-left: -20px;
-}
-.ms_scritta{
   margin-left: 20px;
 }
 
-
-
-.custom-shape-divider-bottom-1654526291 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: -1;
+.ms_h, .ms_p{
+  margin-left: 40px;
 }
 
-.custom-shape-divider-bottom-1654526291 svg {
-  display: block;
-  width: calc(122% + 1.3px);
-  height: 129px;
+.ms_scritta{
+  margin-left: 60px;
 }
 
-.custom-shape-divider-bottom-1654526291 .shape-fill {
-    fill: #F00000;
-}
+
+
+
 
 
 
@@ -334,7 +372,7 @@ $split-color:     #FF2C75;
     right: -10%;
     height: $split-thickness;
     border-radius: $split-thickness;
-    margin-top: -($split-thickness / 2);
+    /* margin-top: -($split-thickness / 2); */
     background: $split-color;
     transform: scale(0);
     transition: transform .8s cubic-bezier(.16,1.08,.38,.98);
@@ -369,5 +407,28 @@ $split-color:     #FF2C75;
   .Mask { color: black; transform: skewX(12deg) translateX(5px); }
   .Mask + .Mask { transform: skewX(12deg) translateX(-5px); }
   &::before { transform: scale(1); }
+}
+
+
+
+.ms_bg{
+  transform-style: preserve-3d;
+}
+
+.ms_background2{
+  background-image: url(../assets/babele.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: center;
+  z-index: -1;
+  height: 2160px;
+}
+
+.ms_container2{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 120px;
+  width: 150%;
 }
 </style>

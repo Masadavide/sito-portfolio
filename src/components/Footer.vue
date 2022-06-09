@@ -1,15 +1,18 @@
 <template>
-  <div>
-    Footer
-    <div class="circle__box">
+<div class="ms_background">
+  Footer
+  <div class="ms_container">
+    <!-- <div class="circle__box">
       <div class="circle__wrapper circle__wrapper--right">
         <div class="circle__whole circle__right"></div>
       </div>
       <div class="circle__wrapper circle__wrapper--left">
         <div class="circle__whole circle__left"></div>
       </div>
+    </div> -->
   </div>
-  </div>
+    
+</div>
 </template>
 
 <script>
@@ -20,6 +23,17 @@ export default {
 
 
 <style scoped lang="scss">
+.ms_background{
+  background-image: url(../assets/montagna.jpg);
+  background-size: cover;
+  background-color: #97aac1;
+  z-index: 0;
+}
+
+.ms_container{
+  height: 1000px;
+}
+
 .circle__box {
   width: 200px;
   height: 200px;
