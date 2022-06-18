@@ -1,5 +1,8 @@
 <template>
 <div class="ms_background">
+  <video autoplay muted loop class="ms_video">
+    <source src="../assets/onde.mp4" type="video/mp4">
+  </video>
   <div id="home" class="ms_container row row-cols-1 row-cols-xl-2 justify-content-center align-items-center overflow-hidden text-center">
     <div class="col ms_frase">
       Ogni giorno, quello che scegli, quello che pensi e quello che fai ...
@@ -124,22 +127,33 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 .ms_background{
-  background-image: url(../assets/seatop.jpg);
+  /* background-image: url(../assets/seatop.jpg); */
   background-size: cover;
   width: 100%;
-  /* transform: scaleY(-1); */
   background-position: 0 20%;
   background-repeat: no-repeat;
+  position: relative;
 }
+
+.ms_video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: -9;
+  position: absolute;
+}
+
 .ms_container{
   max-width: 1150px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .ms_frase{
   font-family: 'Patua One', cursive;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 .reveal-text,
@@ -156,7 +170,7 @@ export default {
 	--animation-duration: var(--duration, 800ms);
 	--animation-iterations: var(--iterations, 1);
 	position: relative;
-	font-size: 3rem;
+	font-size: 2.8rem;
 	animation-name: clip-text;
 	color: #FF2C75;
 	white-space: nowrap;
@@ -538,8 +552,8 @@ export default {
 }
 
 .ms_cerchiodx {
-  border-top: 20px solid #BF953F;
-  border-right: 20px solid #BF953F;
+  border-top: 20px solid #ee7752;
+  border-right: 20px solid #75000b;
   right: 0;
   animation: cerchio-destra 20s linear;
   animation-fill-mode: forwards;
@@ -547,8 +561,8 @@ export default {
 
 
 .ms_cerchiosx {
-  border-bottom: 20px solid teal;
-  border-left: 20px solid teal;
+  border-bottom: 20px solid #ee7752;
+  border-left: 20px solid #75000b;
   left: 0;
   animation: cerchio-sinistra 20s linear;
   animation-fill-mode: forwards;

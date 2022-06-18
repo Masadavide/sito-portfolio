@@ -10,7 +10,14 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import '@fortawesome/fontawesome-free/css/all.css'
 
+import * as VueGoogleMaps from "vue2-google-maps" // Import package
 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyDnNOKCj4HUyOtsFuj0VTmiYaB4TRWxtjA",
+    libraries: "places"
+  }
+});
 
 
 

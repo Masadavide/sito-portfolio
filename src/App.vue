@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <Main/>
-    <Footer/>
+    <Footer/> 
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   components: {
     Header,
     Main,
-    Footer
+    Footer,
   }
 }
 </script>
